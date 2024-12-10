@@ -114,7 +114,6 @@ public class HotelAdmin
         var region = Environment.GetEnvironmentVariable("AWS_REGION");
         var bucketName = Environment.GetEnvironmentVariable("bucketName");
 
-
         var client = new AmazonS3Client(RegionEndpoint.GetBySystemName(region));
         var dbClient = new AmazonDynamoDBClient(RegionEndpoint.GetBySystemName(region));
 
